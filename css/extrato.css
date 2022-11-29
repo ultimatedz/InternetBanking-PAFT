@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+
+
+body{
+    margin: 0px;
+    font-family: 'Jura', sans-serif;
+
+}
+
+
+
+.menu{
+    background-color: goldenrod;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    width: 100%;
+    padding-top: 10px;
+    height: 30px;
+    padding-bottom: 15px;
+}
+
+
+.icon{
+    font-size: 30px;
+    color: black;
+    margin-left: 5%;
+}
+
+.icon a{
+    color: black;
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.containerSaldo{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 40px;
+}
+
+#saldo{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.titlesSaldo{
+    font-size: 15px;
+    color: rgb(41, 40, 40);
+}
+
+.titlesSaldoMain{
+    font-size: 18px;
+}
+
+.minorInfo{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#investirColor{
+    color: green
+}
+
+.dinheiroGuardado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rendimentoConta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divBar{
+    width: 100%;
+    background-color: goldenrod;
+    height: 2px;
+}
+
+
+.containerExtrato{
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+}
+
+#barraPesquisa{
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(240, 238, 238);
+}
+
+.containerMovimentacoes{
+    margin-top: 5%;
+    display: flex;
+    gap: 5%;
+    flex-direction: column;
+}
+
+.divTipo{
+    font-weight: 700;
+    font-size: 20px
+}
+
+.divName .divValor{
+    color: rgb(117, 117, 117);
+}
+
+

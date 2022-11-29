@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Aegis - Transferencia</title>
+    <link rel="stylesheet" href="../css/transfer.css">
+    <script src="../script/transfer.js" defer></script>
+    <script src="https://kit.fontawesome.com/360df2e0e4.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="menu">
+        <div class="upperMenu">
+            <div class="back">
+                <a href="pix.html">
+                    <div class="backIcon">
+                        <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                    </div>
+                </a>
+            </div>
+
+            
+            <div class="divIcons">
+                <div class="userIcon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="help">
+                    <i class="fa-regular fa-circle-question"></i>
+                </div>
+            </div>
+        </div>
+        <div class="divNome">
+            <span>Olá, Caio</span>
+        </div>
+    </div>    
+
+
+
+    <div class="main">
+        <div class="centralContainerInfo">
+            <h2 id="TitlePix">Area Pix</h2>
+           
+            <div class="valuePix">
+                <label for ="valorPix">Digite o valor</label>
+                <Br>
+
+                <input type="text" id="valor" placeholder="Valor em reais"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />            
+            </div>
+
+
+
+
+            <div class="keyPix">
+                <label for ="pixID">Digite a chave pix</label>
+                <br>
+                <input type="text" id="pixID" placeholder="CPF ou CNPJ" maxlength="17"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />           
+
+                <br>
+                <div class="container-btn">
+                    <a href="pixConclusion.html">
+                        <button class="btn-pix">Transferir</button>
+                    </a>
+                </div>
+               
+            </div>
+            
+        </div>
+    </div>
+
+    
+    
+
+
+
+
+
+</body>
+</html>

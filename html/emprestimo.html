@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Aegis - Emprestimo</title>
+    <link rel="stylesheet" href="../css/emprestimo.css">
+    <script src="https://kit.fontawesome.com/360df2e0e4.js" crossorigin="anonymous"></script>
+    <script src="../script/emprestimo.js" defer></script>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="icon">
+            <a href="account.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            </div>
+
+        <div class="divIcons">
+            <div class="eye">
+                <i class="fa-sharp fa-solid fa-eye" id="eyeIcon"></i>
+            </div>
+            <div class="userIcon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="help">
+                <i class="fa-regular fa-circle-question"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="main">
+        <div class="containerCentral">
+            <div class="emprestimo">
+                <div class="titleEmprestimo">
+                    <span>Digite a quantidade desejada</span>
+                </div>
+                <div class="inputValor">
+                    <span>R$</span>
+                    <input type="text" id="valor" placeholder="Valor em reais"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />            
+                </div>
+                <div>
+                    <a href="Account.html">
+                        <button class="btn-autorizar">Autorizar</button>
+                    </a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>

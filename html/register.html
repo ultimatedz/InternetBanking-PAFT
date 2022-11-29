@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Aegis - Registrar</title>
+    <script src="https://kit.fontawesome.com/360df2e0e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../script/register.js" defer></script>
+
+</head>
+<body>
+
+    <div class="menu">
+        <div class="icon">
+            <a href="index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="main">
+        <div class="centralContainer">
+            <div class="title">
+                <h2>Abra sua conta</h2>
+            </div>
+            <div class="userInfo">
+                <div class="fname">
+                    <label>Nome Completo</label>
+                    <Br>
+                    <input type="text" placeholder="Nome Completo" id="fnameInput">
+                </div>
+
+
+                <div class="CPF">
+                    <label>CPF</label>
+                    <br>
+                    <input type="text" id="cpfInput" maxlength="14" placeholder="Apenas numero"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                    
+                </div>
+
+                <div class="divCep">
+                    <label>CEP</label>
+                    <br>
+                     <input type="text" id="cepInput" maxlength="9" placeholder="Apenas numero"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                </div>
+                <div class="endereco">
+                    <div class="enderecoF">
+                        <label>Endereço Completo</label>
+                        <br>
+                        <input type="text" id="endereco">
+                        <br>
+                    </div>
+                    <div class="numeroAddress">
+                        <label>Numero</label>
+                        <br>
+                        <input type="text" id="numeroEndereco">
+                    </div>
+                    
+                    <div class="bairro">
+                        <label>Bairro</label>
+                        <br>
+                        <input type="text" id="bairroEndereco">
+                        
+                    </div>
+                    <div class="estado">
+                        <label>Estado</label>
+                        <Br>
+                        <input type="text" id="estado">
+                    </div>
+                    <div class="cidade">
+                        <label>Cidade</label>
+                        <br>
+                        <input type="text" id="cidade">
+                    </div>
+
+                    <div class="divEmail">
+                        <label>E-mail</label>
+                        <br>
+                        <input type="text" id="email">
+                    </div>
+                   
+                </div>
+                <div class="divTelefone">
+                    <label>Telefone</label>
+                    <br>
+                    <input type="text" id="telefoneInput" maxlength="11" placeholder="com DDD"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                
+                </div>
+
+               
+                
+            </div>
+            <div class="divButton">
+                <button class="btn-register" disabled>Cadastrar</button>
+            </div>
+            
+        </div>
+
+
+
+    </div>
+</body>
+</html>
