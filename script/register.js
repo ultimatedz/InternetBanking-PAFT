@@ -9,7 +9,64 @@ const btnRegister = document.querySelector(".btn-register");
 const email = document.querySelector("#email");
 const fnameInput = document.querySelector("#fnameInput");
 
+
+let dadosLocalStorage = localStorage.getItem("contas");
+let contas = JSON.parse(dadosLocalStorage);
+let idConta = localStorage.getItem("idConta");
+
+
+
 let validador=0;
+
+
+const Pessoa = {
+    nome: "",
+    cep: "",
+    estado: "",
+    cidade:"",
+    saldo:"",
+    pixId:"",
+    agencia:"",
+    conta:"",
+}
+
+
+
+
+function PessoaObj(nome,cep,estado,cidade) {
+
+    let pessoa = Object.create(Pessoa);
+    pessoa.nome = nome;
+    pessoa.cep = cep;
+    pessoa.estado = estado;
+    pessoa.cidade = cidade;
+    pessoa.saldo = 0;
+    pessoa.agencia = randNumber(1);
+    pessoa.conta = randNumber(2);
+    pessoa.pixID = randNumber(3);
+
+    return pessoa;
+    
+}
+
+
+
+function randNumber(id){
+    if (id ==1){
+        return Math.floor(Math.random() * 9999);
+    }else if(id ==2){
+        return Math.floor(Math.random() * 999999);
+    }else{
+        return Math.floor(Math.random() * 99999999999);
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -228,9 +285,53 @@ function validarCPF(cpf) {
 
 
 function ativaBtn(validador){
+
+
     if (validador >=7){
         btnRegister.style.opacity = 1;
         btnRegister.disabled = false;
+
+        let pessoa = PessoaObj(fnameInput.value, inputCEP.value, estado.value, cidade.value);
+
+
+        let len = contas.length;
+
+        let contaNova =
+            {
+                nome: "",
+                saldo:"",
+                pixID:"",
+                agencia:"",
+                conta:"",
+            }
+        
+
+        contaNova.nome = pessoa.nome;
+        contaNova.saldo = 0;
+        contaNova.pixID = pessoa.pixID;
+        contaNova.agencia= pessoa.agencia;
+        contaNova.conta =  pessoa.conta;
+
+
+        
+        contas.push(contaNova);
+
+        localStorage.setItem("contas", JSON.stringify(contas));
+        localStorage.setItem("idConta", len);
+
+
+        console.log(pessoa.nome);
+        console.log(contas);
+        console.log(len);
+
+
     }
 
 }
+
+
+
+
+
+    
+
