@@ -199,7 +199,9 @@ function formataTelefone(telefone){
 async function getAPI(cep){
     let response = await fetch('https://viacep.com.br/ws/'+cep+'/json/');
     let data = await response.json();
-    console.log(data);
+
+    validateCEP(data);
+
     endereco.value = data.logradouro;
     endereco.readOnly = true;
 
@@ -212,6 +214,24 @@ async function getAPI(cep){
     estado.value = data.uf;
     estado.readOnly=true;
 }
+
+
+function validateCEP(data){
+    try{
+        if(data.erro == true){
+            throw new Error('CEP INVALIDO');
+        }else{
+            console.log("Teste CEP passou");
+        }
+    }catch (err){
+        throw new Error(err);
+    }
+}
+
+
+
+
+
 
 
 
