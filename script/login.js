@@ -149,6 +149,7 @@ inputAgencia.addEventListener('input', function (e) {
             if(contas[i].conta == e.target.value){
                 nomeCC.innerHTML = contas[i].nome;
                 localStorage.setItem("idConta", i);
+                console.log("IF CONTAS");
             }
         }
 
@@ -195,3 +196,4 @@ inputAgencia.addEventListener('input', function (e) {
 
 
 document.onload = localStorage.setItem("contas", JSON.stringify(contas));   //Salva as contas
+document.onload = localStorage.setItem("idConta", 0); 
