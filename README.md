@@ -9,5 +9,5 @@ Login, extrato, empréstimo e pagamento.
 
 Foi desenvolvidas várias telas, e utilizado LocalStorage para armazenamento da ID do usuário e das informações de conta.
 
-A proposta era botar em pratica exercicios vistos em sala, assim como aprofundamento em outros temas, como REGEX.
+A proposta era botar em pratica exercicios vistos em sala, assim como aprofundamento em outros temas, como REGEX, e programação assincrona a qual eu utilizei uma API para validação do CEP inserido pelo usuario.
 
