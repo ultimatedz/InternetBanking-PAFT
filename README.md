@@ -1,4 +1,4 @@
-# projetoFinalJSPUCPR
+# Projeto Final Modulo JavaScript PAFT
 
 
 Trabalho final do módulo de JavaScript do programa PAFT, parceria entre visionnaire, Bradesco e PUC-PR.
